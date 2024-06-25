@@ -4,6 +4,7 @@ describe("Declaracion de variables", () => {
   it("Declaracion de una variable", () => {
     // asignar un valor a x que pase el test
     let x;
+    x = 5;
 
     expect(x).toBe(5);
   });
