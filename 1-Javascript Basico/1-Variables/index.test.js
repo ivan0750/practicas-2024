@@ -13,6 +13,9 @@ describe("Declaracion de variables", () => {
     // usar x para asignar un valor a "y" que pase el test
     let x;
     let y;
+    x=5;
+    y=x;
+    
 
     expect(y).toBe(5);
   });
