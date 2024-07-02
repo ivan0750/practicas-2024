@@ -6,6 +6,9 @@ describe("Operaciones Algebraicas", () => {
     let x;
     let y;
     let z;
+    x=3;
+    y=2;
+    z=5;
 
     expect(x + y).toBe(5);
     expect(x + y + z).toBe(10);
@@ -14,6 +17,9 @@ describe("Operaciones Algebraicas", () => {
     let x;
     let y;
     let z;
+    x=6;
+    y=1;
+    z=-5;
 
     expect(x - y).toBe(5);
     expect(x - y - z).toBe(10);
@@ -22,6 +28,9 @@ describe("Operaciones Algebraicas", () => {
     let x;
     let y;
     let z;
+    x=2;
+    y=5;
+    z=10;
 
     expect(x * y).toBe(10);
     expect(x * y * z).toBe(100);
@@ -30,6 +39,9 @@ describe("Operaciones Algebraicas", () => {
     let x;
     let y;
     let z;
+    x=20;
+    y=2;
+    z=2;
 
     expect(x / y).toBe(10);
     expect(x / y / z).toBe(5);
@@ -37,11 +49,14 @@ describe("Operaciones Algebraicas", () => {
   it("Resto", () => {
     let x;
     let y;
+    x=8;
+    y=3;
 
     expect(x % y).toBe(2);
   });
   it("Operadores Unarios", () => {
     let x = 0;
+    x++;
 
     // Utilizar un operador unario para cambiar el valor de x
     expect(x).toBe(1);
@@ -52,18 +67,24 @@ describe("Operaciones Logicas", () => {
   it("OR", () => {
     let x;
     let y;
+    x=true;
+    y=false;
+
 
     expect(x || y).toBe(true);
   });
   it("AND", () => {
     let x;
     let y;
+    x=true;
+    y=true;
 
     expect(x && y).toBe(true);
   });
   it("NOT", () => {
     let x = false;
     let y = !x;
+    y=!true;
 
     expect(y).toBe(false);
   });
@@ -71,10 +92,15 @@ describe("Operaciones Logicas", () => {
     let x;
     let y;
     let z;
+    x=5;
+    y=3;
+    z=4;
 
     expect(x > 4).toBe(true);
     expect(y < 5).toBe(true);
     expect(z >= 3).toBe(true);
+    x=3;
+    
     expect(x == "3").toBe(true);
     expect(x === 3).toBe(true);
   });
@@ -82,6 +108,7 @@ describe("Operaciones Logicas", () => {
   it("Short Circuit Evaluation", () => {
     let x = 10;
     let y;
+    y=0;
 
     expect(y || x).toBe(10);
     expect(y && x).toBe(false);
