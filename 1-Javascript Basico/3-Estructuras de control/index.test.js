@@ -5,7 +5,10 @@ describe("Estructuras de control", () => {
   it("IF", () => {
     let x;
     let y;
-
+    if(x=true){
+      y=10;
+      console.x("la condicion es verdadera");
+    }
     expect(y).toBe(10);
   });
 
@@ -13,6 +16,13 @@ describe("Estructuras de control", () => {
   it("IF ELSE", () => {
     let x;
     let y;
+    if(x=true){
+      y=10;
+      console.x("la condicion es verdadera");
+    }else {
+      y=20;
+      console.x("la condicion es falsa");
+    }
 
     expect(z).toBe(10);
   });
@@ -21,6 +31,13 @@ describe("Estructuras de control", () => {
   it("WHILE", () => {
     let x;
     let y;
+    x=10;
+    y=1;
+    while(y<=x){
+      console.log(x);
+      x--;
+      y++;
+    }
 
     expect(y).toBe(10);
   });
@@ -29,6 +46,10 @@ describe("Estructuras de control", () => {
   it("FOR", () => {
     let x;
     let y;
+    x=10;
+    for(y=1; y<=x; y++){
+      console.log(y);
+    }
 
     expect(y).toBe(10);
   });
@@ -37,6 +58,32 @@ describe("Estructuras de control", () => {
   it("SWITCH", () => {
     let x;
     let y;
+    y=1;
+    switch(x){
+      case 1:
+        console.log("lunes");
+        break;
+      case 2: 
+      console.log("martes");
+      break;
+      case 3:
+        console.log("miercoles");
+        break;
+      case 4:
+        console.log("jueves");
+        break;
+      case 5:
+        console.log("viernes");
+        break;
+      case 6:
+        console.log("sabado");
+        break;
+      case 7:
+        console.log("domingo");
+        break;
+      default:
+        console.log("default");
+    }
 
     expect(y).toBe("Lunes");
   });
