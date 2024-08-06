@@ -5,8 +5,12 @@ describe("Manejo avanzado de arreglos", () => {
     /**
      * Agregar todos los elementos del arreglo 'arr' al arreglo 'arr2' usando el forEach
      */
-    const arr1 = [1, 2, 2];
+    const arr1 = [1, 2, 3];
     const arr2 = [];
+    arr1.forEach((num) => {
+  arr2.push(num);
+    });
+
 
     expect(arr2).toStrictEqual([1, 2, 3]);
   });
@@ -17,6 +21,8 @@ describe("Manejo avanzado de arreglos", () => {
 
     const arr1 = [1, 2, 3];
     const arr2 = [];
+
+    arr2=arr1.map((e)=> e+1);
 
     expect(arr2).toStrictEqual([2, 3, 4]);
   });

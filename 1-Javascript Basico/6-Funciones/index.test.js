@@ -78,6 +78,14 @@ describe("Funciones", () => {
     expect(mayusMinus("Hola soy una cadena de caracteres")).toBe("hOLA Soy uNA Cadena dE Caracteres");
   });
   it("Fechas", () => {
+    let x  = date1;
+    let y = date2;
+
+    if(x > y) {
+      return true;
+    } else {
+      return false;
+    }
     /**
      * Programar una funcion que reciba 2 fechas en formato string, date1 y date2
      * Esta funcion debe retornar true si date1 es mas vieja que date2
