@@ -32,6 +32,7 @@ describe("Manejo avanzado de arreglos", () => {
      */
     const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const arr2 = [];
+    arr2=arr1.
 
     expect(arr2).toStrictEqual([1, 3, 5, 7]);
   });
@@ -41,6 +42,26 @@ describe("Manejo avanzado de arreglos", () => {
      */
     const arr1 = [1, 4, 14, 25, 67, 2, 17, 23];
     let primo;
+    function esPrimo(num){
+      if(num <= 1) return false;
+      if(num <= 3) return true;
+      if(num %2 === 0 || num %3 === 0 ) return false;
+
+      for(let i=5 ; i*i <= num ; i+= 6 ){
+        if(num % i === 0 || num % (i+2) === 0)return false;
+      }
+      return true;
+    }
+      primo = arr1.find((num) => esPrimo(num));
+
+      if(Math.sqrt(primo)>5) {
+        arr1.sort()
+      } else {
+        arr1.sort((n1,n2) => {
+          if(n1>n2) return 1;
+          return -1;
+        })
+      }
 
     expect(arr1).toStrictEqual([1, 2, 4, 14, 17, 23, 25, 67]);
 
