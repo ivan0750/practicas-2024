@@ -1,24 +1,24 @@
 const readline = require("readline/promises").createInterface({
     input: process.stdin,
     output: process.stdout,
-  });
+});
 const matriz = () => {
 
-        let arr1 =["","",""];
-        let arr2 =["","",""];
-        let arr3 =["","",""];
-        let matrix =[arr1,arr2,arr3];
-        return matrix;
-    }
+    let arr1 =["","",""];
+    let arr2 =["","",""];
+    let arr3 =["","",""];
+    let matrix =[arr1,arr2,arr3];
+    return matrix;
+}
     //verifica si alguien gano
-    const gano = (tablero,word) =>{
-        if((tablero [0][0] === word) && (tablero [1][1] === word ) && (tablero [2][2] === word)) return "gano";
-        if((tablero [0][2] === word) && (tablero [1][1] === word ) && (tablero [2][0] === word)) return "gano";
+const gano = (tablero,word) =>{
+    if((tablero [0][0] === word) && (tablero [1][1] === word ) && (tablero [2][2] === word)) return "gano";
+    if((tablero [0][2] === word) && (tablero [1][1] === word ) && (tablero [2][0] === word)) return "gano";
 
-        for(y=0 ; y<=2 ; y++){
+    for(y=0 ; y<=2 ; y++){
 
-         if((tablero [y][0] === word ) && (tablero [y][1] === word )&&(tablero [y] [2] === word)) return "gano";
-         if((tablero [0][y] === word ) && (tablero [1][y] === word )&&(tablero [2] [y] === word)) return "gano";
+        if((tablero [y][0] === word ) && (tablero [y][1] === word )&&(tablero [y] [2] === word)) return "gano";
+        if((tablero [0][y] === word ) && (tablero [1][y] === word )&&(tablero [2] [y] === word)) return "gano";
     
     }
     return "no gano";
