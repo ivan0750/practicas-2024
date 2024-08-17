@@ -1,6 +1,8 @@
-describe("Juegos del ta-te-ti", () => {
-
-    const matriz = () => {
+const readline = require("readline/promises").createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+const matriz = () => {
 
         let arr1 =["","",""];
         let arr2 =["","",""];
@@ -22,7 +24,7 @@ describe("Juegos del ta-te-ti", () => {
     return "no gano";
   }
 
-  const continuar = (tablero,x,y) => { 
+  const continua = (tablero,x,y) => { 
     if( 2<x>0 || 2<y>0 ) return true;     
     if(tablero[y][x]=="") return false;
     else return true;
@@ -57,7 +59,7 @@ describe("Juegos del ta-te-ti", () => {
       while(continuar === true) {
         x=await readline.question("Seleccione la columna en la que desea jugar su turno:" );
         y=await readline.question("Seleccione en que fila desea jugar su turno:" );
-        continuar=con(tablero,x,y);
+        continuar=continua(tablero,x,y);
         
         if(continuar===true) {
           console.clear();
@@ -83,6 +85,3 @@ describe("Juegos del ta-te-ti", () => {
   }
 
   jugar();
-
-        
-})
