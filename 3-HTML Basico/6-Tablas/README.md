@@ -32,12 +32,12 @@ Para crear una tabla se necesita de uan combinacion de etiquetas, un ejemplo de 
 
 Donde:
 
-- <table></table>: Es la etiqueta que engloba a toda la tabla
-- <thead></thead>: Es la etiqueta que representa todo el encabezado de la tabla
-- <tr></tr>      : Es la etiqueta que engloba todos los elementos de una fila
-- <th></th>      : Representa un elemento dentro de la fila de ENCABEZADOS
-- <tbody></tbody>: Es la etiqueta que engloba todo el cuerpo de la tabla
-- <td></td>      : Represneta un elemento dentro de la fila del CUERPO
+- ```<table></table>```: Es la etiqueta que engloba a toda la tabla
+- ```<thead></thead>```: Es la etiqueta que representa todo el encabezado de la tabla
+- ```<tr></tr>```      : Es la etiqueta que engloba todos los elementos de una fila
+- ```<th></th>```      : Representa un elemento dentro de la fila de ENCABEZADOS
+- ```<tbody></tbody>```: Es la etiqueta que engloba todo el cuerpo de la tabla
+- ```<td></td>```      : Represneta un elemento dentro de la fila del CUERPO
 
 ## Tarea
 
@@ -47,4 +47,4 @@ Crear un archivo con las mismas caracteristicas del punto anterior, agregando un
 - Horas que estuvieron en la clase
 - Breve descripcion de lo hecho en la clase
 
-Pueden utilizar como referencia el siguente [excel](https://docs.google.com/spreadsheets/d/1IvrG0LOUyKkrOMHnM4JIH9G0ug3lK4PE/edit?usp=sharing&ouid=115716158911216165456&rtpof=true&sd=true)
+Pueden utilizar como referencia el siguente [excel](https://docs.google.com/spreadsheets/d/1VuKtw1-cpIaZtShewmz9fz28Y6Ki4hfS/edit?gid=1023296915#gid=1023296915)
