@@ -1,0 +1,7 @@
+div {
+    background-image: url("gojo.jpg");
+}
+.messi{
+    background-image: url("gojo.jpg");
+    background-repeat: repeat-x;
+}
