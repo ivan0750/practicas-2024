@@ -1,0 +1,18 @@
+div{
+    background: url("satoru.jpeg");
+    border-style: solid;
+    color:blue;
+    padding-left: 50px;
+    padding-bottom: 250px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+.messi{
+    background: url("sukuna.jpeg");
+    border-style: dotted;
+    color: red;
+    padding-left: 50px;
+    padding-bottom: 250px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
