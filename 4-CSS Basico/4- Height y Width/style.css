@@ -1,0 +1,14 @@
+div{
+    background: url("satoru.jpeg");
+    border-style: solid;
+    color:blue;
+    height: 550px;
+    width: 1250px;
+}
+.messi{
+    background: url("sukuna.jpeg");
+    border-style: dotted;
+    color: red;
+    height: 550px;
+    width: 1250px;
+}
