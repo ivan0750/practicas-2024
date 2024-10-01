@@ -1,0 +1,13 @@
+div {
+    border-style: solid;
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+}
+.messi {
+    text-decoration-line: underline;
+    color: red;
+}
+.messi2 {
+    color: chartreuse;
+}
