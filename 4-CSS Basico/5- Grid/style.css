@@ -1,0 +1,37 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: auto;
+    gap: 0.5em;
+  }
+  .suk {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: right;
+
+  }
+  .suk :hover{
+    border: 1px solid red;
+    background: brown;
+    padding: 1em;
+  }
+  .mah {
+    text-align: left;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .mah :hover {
+    border: 1px solid rgba(0, 195, 255, 0.919);
+    background: aqua;
+    padding: 1em;
+  }
+  .goj {
+    text-align: center;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .goj :hover{
+    border: 1px solid blueviolet;
+    background: purple;
+    padding: 1em;
+  }
