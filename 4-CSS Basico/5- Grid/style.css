@@ -1,8 +1,8 @@
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column: auto;
-    gap: 0.5em;
+    grid-template-rows: auto;
+    gap: 1em;
   }
   .suk {
     grid-column: auto;
@@ -19,6 +19,7 @@
     text-align: left;
     grid-column: auto;
     grid-row: auto;
+
   }
   .mah :hover {
     border: 1px solid rgba(0, 195, 255, 0.919);
@@ -29,6 +30,7 @@
     text-align: center;
     grid-column: auto;
     grid-row: auto;
+    
   }
   .goj :hover{
     border: 1px solid blueviolet;
