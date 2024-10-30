@@ -10,7 +10,7 @@ const botones = Array.from(document.querySelectorAll(".messi"));
     if(juego === "PAUSA") return;
     //ejecutar solo un click
     if(boton.textContent !== "" ) return;
-
+    
     boton.innerText = juego === "jugador 1" ? x : o ;
     const posicionGanadora = revisarSiHayGanador()
     if(typeof posicionGanadora === "object"){
@@ -75,9 +75,9 @@ const botones = Array.from(document.querySelectorAll(".messi"));
 
  modal.querySelector("button").addEventListener("click", () => {
   botones.forEach(boton => {
-    boton.textContent = " ";
+    boton.textContent = "";
     boton.classList.toggle("ganador", false);
-    modal.close()
-    juego = "jugador 1"; 
+    modal.close();
+   juego = "jugador 1";  
   });
- })
+ });
