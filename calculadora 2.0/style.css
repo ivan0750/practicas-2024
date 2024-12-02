@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#container{
+    border: 2px solid black;
+    padding: 5px;
+    background: aqua;
+    border-radius: 5px;
+}
+
+#botonoContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-area: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    aspect-ratio: 1;
+    padding: 5px;
+    gap: 5px;
+    background: aqua;
+    border-radius: 5px;
+}
+
+#pantalla{
+    border: 1px solid black;
+    text-align: end;
+    padding-right: 10px;
+    background-color: aliceblue;
+    font-size: 3rem;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+#historial{
+    position: absolute;
+    font-size: x-large;
+    top: 0px;
+    left: 570px;
+}
+
+.numero{
+    background-color: rgba(4, 97, 164, 0.995);
+}
+
+.operacion{
+    background-color: rgba(4, 97, 164, 0.995);
+}
+
+.borrar{
+    background-color: rgba(4, 97, 164, 0.995);
+}
+
+.eliminar{
+    background-color: rgba(4, 97, 164, 0.995);
+}
+
+.punto{
+    background-color: rgba(4, 97, 164, 0.995);
+}
+.parentecis{
+    background-color: rgba(4, 97, 164, 0.995);
+}
